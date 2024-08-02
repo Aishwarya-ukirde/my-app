@@ -16,7 +16,7 @@ const Slice = createSlice({
                 email:action.payload.email,
                 age:action.payload.age,
                 address:action.payload.address
-            }
+            }  
             state.users.push(data);
             let userData=JSON.stringify(current(state.users))
             localStorage.setItem("users",userData)
