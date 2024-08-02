@@ -1,9 +1,7 @@
-import { createSlice, nanoid ,current } from '@reduxjs/toolkit';
-import { ACTION } from 'next/dist/client/components/app-router-headers';
-import { Josefin_Sans } from 'next/font/google';
+import { createSlice, nanoid , current } from '@reduxjs/toolkit';
 
 const initialState ={
-    users:JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+    users: JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
 }
 
 const Slice = createSlice({
