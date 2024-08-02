@@ -1,0 +1,71 @@
+// globals.scss
+
+// Define some global variables
+$primary-color: #3498db; // Change as needed
+$secondary-color: #2ecc71; // Change as needed
+$background-color: #f4f4f4; // Change as needed
+$text-color: #333;
+
+// Global styles
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    color:darkslategray;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $text-color;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color:#e84949;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid $text-color;
+    }
+
+    th {
+        background-color:#333;
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background-color: lighten($background-color, 5%);
+    }
+}
+
+button {
+    margin-right: 10px;
+}
